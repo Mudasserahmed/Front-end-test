@@ -1,24 +1,23 @@
 import logo from './logo.svg';
 import './App.css';
+import { Card } from './components/Card';
+import Top from './components/Top';
+import Tabs from './components/Tabs';
 
 function App() {
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
+    <>
+      <section>
+        <Top />
+      </section>
+      <section className="w-full h-24 bg-gradient-to-r px-32 from-red-50 via-red-50 to-red-100 flex items-center justify-start">
+        <h1 className="text-3xl font-bold text-black">Week Orders</h1>
+      </section>
+      <section className="">
+        <Tabs/>
+      </section>
+      
+    </>
   );
 }
 
